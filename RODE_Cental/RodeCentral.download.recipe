@@ -2,34 +2,32 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>Description</key>
-    <string>Downloads the current version of RODE Connect.</string>
-    <key>Identifier</key>
-    <string>com.github.RODEConnect</string>
-    <key>MinimumVersion</key>
-    <string>2.3</string>
-    <key>Input</key>
-    <dict>
-        <key>NAME</key>
-        <string>RODE Connect</string>
-        <key>URL</key>
-        <string>https://update.rode.com/connect/RODE_Connect_MACOS.zip</string>
-    </dict>
-    <key>Process</key>
-    <array>
-        <dict>
-            <key>Processor</key>
-            <string>URLTextSearcher</string>
-            <key>Arguments</key>
-            <dict>
-                <key>re_pattern</key>
-                <string>https.+?RODE Connect macOS.+?zip</string>
-                <key>url</key>
-                <string>%URL%</string>
-            </dict>
-        </dict>
-        <!-- Other processors go here -->
-        <!-- ... -->
-    </array>
+<key>Description</key>
+<string>Downloads the current version of RODE Connect.</string>
+<key>Identifier</key>
+<string>com.github.RODEConnect</string>
+<key>MinimumVersion</key>
+<string>2.3</string>
+<key>Input</key>
+<dict>
+<key>NAME</key>
+<string>RODE Connect</string>
+<key>URL</key>
+<string>https://update.rode.com/connect/RODE_Connect_MACOS.zip</string>
+</dict>
+<key>Process</key>
+<array>
+<dict>
+<key>Processor</key>
+<string>URLTextSearcher</string>
+<key>Arguments</key>
+<dict>
+<key>re_pattern</key>
+<string>https.+?RODE Connect macOS.+?zip</string>
+<key>url</key>
+<string>%URL%</string>
+</dict>
+</dict>
+</array>
 </dict>
 </plist>
